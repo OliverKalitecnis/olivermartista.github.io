@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('n2swRUZesgI5NGmGP')
+  </script>
+
+    <title>Oliver M Artista</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Oliver M Artista</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="https://www.youtube.com/@tuto_kalitecno"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/in/oliver-martinez-762544257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2hnxWekwQ5SWy9rCfbWxZA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Oliver Martinez</span>, Artista Visual</h2>
+                <p class="descripcion">Egresado de la Universidad de Guadalajara en la Licenciatura de Artes Visuales para la Expresión Plástica. 
+                    Desde la juventud he estado inquieto con el mundo tecnológico y he ido a la vanguardia de las herramientas. 
+                    Con una base sólida en Bellas Artes.
+                    Preparado para enfrentar los desafíos de la vida misma.</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Oliver Martinez</span></h2>
+            <h3>Artista Visual</h3>
+            <p>Tengo 3 años de experiencia en el campo laboral del Diseño Gráfico.
+               Mi día a día se resume al diseño de pre-imprenta, asegurarme de que los diseños
+               estén con las medidas, resoluciones y perfiles de color adecuados del proyecto.
+            </p>
+            <p>Para más información, descarga el Curriculum completo...</p>
+            <a href="img/curiculum_2023_.png" download>Descargar CV</a>
+        </div>
+    </section>
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-bezier-curve"></i></span>
+                <h4>Diseño Gráfico</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Vectores</li>
+                    <li>Pixeles</li>
+                </ul>
+                <p>Diseño Gráfico para impresos, salida de archivos listo para impresión.
+                Retoque de Fotografías.
+                Diseño Gráfico para Web y Redes Sociales.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-palette"></i></span>
+                <h4>Pintura</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Acuarela</li>
+                    <li>Acrílico</li>
+                    <li>Oleo</li>
+                    <li>Dibujo</li>
+                </ul>
+                <p> Venta de Pintura de: Retratos, Paisajes, Composiciones, Minimalismo.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-music"></i></span>
+                <h4>Música</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Piano</li>
+                    <li>Composición</li>
+                    <li>Interpretación</li>
+                </ul>
+                <p>Composición de Jingles, arreglos musicales, música instrumental ambiental.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-film"></i></span>
+                <h4>Edición de Vídeo</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Da Vinci Resolve</li>
+                    <li>Motion Graphics</li>
+                    <li>Animación 2D</li>
+                </ul>
+                <p>Edición de vídeos. Shorts. Motion Graphics.
+                para redes sociales y YouTube.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Gráfico</li>
+                    <li>SEO</li>
+                </ul>
+                <p>Diseño de páginas Web en HTML5, CSS3 y JavaScript.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-cube"></i></span>
+                <h4>Diseño 3D</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Blender</li>
+                    <li>Eevee</li>
+                    <li>Cycles</li>
+                </ul>
+                <p>Modelación de elementos y Shading en Blender, renderización imágenes 
+                y vídeo con el motor Eevee y sólo imágenes con el motor Cycles.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">20%</span>
+            </div>
+            <div class="barra">
+                <div id="html"class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">15%</span>
+            </div>
+            <div class="barra">
+                <div id="js"class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Diseño Imágenes</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="pixeles"class=""></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Diseño Vectorial</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="vectores"class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto1.png" alt="Diseño-Impreso">
+                    <div class="info">
+                        <h4>Diseño Impreso</h4>
+                        <p>Diseño para clientes en revista mensual</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto2.png" alt="Rotulacion-Negocio">
+                    <div class="info">
+                        <h4>Diseño Impreso</h4>
+                        <p>Rotulación para Negocio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto3.png" alt="Rotulacion-Camioneta">
+                    <div class="info">
+                        <h4>Diseño Impreso</h4>
+                        <p>Rotulación de flotilla de camionetas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto4.png" alt="Impresion-etiquetas">
+                    <div class="info">
+                        <h4>Diseño Impreso</h4>
+                        <p>Diseño e impresión de etiquetas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto5.png" alt="Rotulacion-Negocio">
+                    <div class="info">
+                        <h4>Diseño Impreso</h4>
+                        <p>Rotulación para Negocio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto6.png" alt="Publicidad-redes-sociales">
+                    <div class="info">
+                        <h4>Diseño Redes Sociales</h4>
+                        <p>Publicidad Dirigida a Redes Sociales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto7.png" alt="Impresion-novela-grafica">
+                    <div class="info">
+                        <h4>Arte Impreso</h4>
+                        <p>Diseño e impresión de Novela Gráfica</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto8.png" alt="ilustracion-digital">
+                    <div class="info">
+                        <h4>Ilustración</h4>
+                        <p>Dibujo e ilustración digital</p>
+                    </div>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/proyecto9.png" alt="render-3D">
+                    <div class="info">
+                        <h4>Diseño 3D</h4>
+                        <p>Render de modelo en 3D</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION CONTACTO
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="" rows="" placeholder="Tu Mensaje" class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">                
+            </form>
+        </div>
+    </section> -->
+
+    <!--SECCION EMAIL API JS-->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctanos ahora</h3>
+        <form id="form">
+            <div class="field">
+            <label for="from_name">Escribe tu</label>
+            <input type="text" placeholder="Nombre y Apellido" name="from_name" id="from_name">
+            </div>
+            <div class="field">
+            <label for="message">Pon</label>
+            <textarea placeholder="Tu Mensaje..." name="message" id="message" rows="4"></textarea>
+            </div>
+            <div class="field">
+            <label for="email_id">Aquí va tu</label>
+            <input type="text" placeholder="Dirección de Email" name="email_id" id="email_id">
+            </div>
+                
+            <input type="submit" id="button" value="Enviar Mensaje" >
+        </form>
+    </section>
+
+    
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>&copy; Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            <a href="https://www.youtube.com/@tuto_kalitecno"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/oliver-martinez-762544257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B2hnxWekwQ5SWy9rCfbWxZA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+
+    <!--API de EmailJS-->
+    
+
+</body>
+</html>
